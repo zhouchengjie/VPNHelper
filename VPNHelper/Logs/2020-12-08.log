@@ -1,0 +1,16 @@
+2020-12-08 16:45:14.614 DEBUG Begin: 0
+2020-12-08 16:50:40.452 DEBUG Begin: 0
+2020-12-08 16:50:47.541 DEBUG GetIP: {"code":0,"data":[{"ip":"183.166.132.64","port":4238,"expire_time":"2020-12-08 16:55:12"}],"msg":"0","success":true}
+2020-12-08 16:51:45.548 DEBUG GetIP: {"code":0,"data":[{"ip":"183.166.132.64","port":4238,"expire_time":"2020-12-08 16:55:12"}],"msg":"0","success":true}
+2020-12-08 16:58:59.959 DEBUG Begin: 0
+2020-12-08 16:59:22.522 ERROR GetIP: System.Net.WebException: 未能解析此远程名称: 'webapi.http.zhimacangku.com'
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 VPNHelper.Utility.HttpHelper.Response(String url, String postData, HttpCookieCollection cookies, String method, String charsSet, String contentType, NameValueCollection header) 位置 D:\Workspace\VPNHelper\VPNHelper\VPNHelper\Utility\HttpHelper.cs:行号 86
+   在 VPNHelper.Utility.HttpHelper.Get(String url, String data, HttpCookieCollection cookies, String charsSet) 位置 D:\Workspace\VPNHelper\VPNHelper\VPNHelper\Utility\HttpHelper.cs:行号 29
+   在 VPNHelper.Utility.HttpHelper.Get(String url, String data, String charsSet) 位置 D:\Workspace\VPNHelper\VPNHelper\VPNHelper\Utility\HttpHelper.cs:行号 33
+   在 VPNHelper.Controllers.VPNController.GetIP() 位置 D:\Workspace\VPNHelper\VPNHelper\VPNHelper\Controllers\VPNController.cs:行号 77
+2020-12-08 17:00:42.832 DEBUG GetIP: {"code":0,"data":[{"ip":"42.59.100.46","port":4270,"expire_time":"2020-12-08 17:04:22"}],"msg":"0","success":true}
+2020-12-08 17:02:46.343 DEBUG Begin: 0
+2020-12-08 17:02:52.964 DEBUG GetIP: {"code":0,"data":[{"ip":"113.120.60.216","port":4242,"expire_time":"2020-12-08 17:27:19"}],"msg":"0","success":true}
+2020-12-08 17:03:45.515 DEBUG Begin: 0
+2020-12-08 17:03:50.536 DEBUG GetIP: {"code":0,"data":[{"ip":"36.62.243.135","port":4245,"expire_time":"2020-12-08 17:28:19"}],"msg":"0","success":true}
