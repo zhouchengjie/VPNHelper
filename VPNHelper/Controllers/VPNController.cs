@@ -100,6 +100,7 @@ namespace VPNHelper.Controllers
 				catch (Exception ex)
 				{
 					LogHelper.Error("GetIP", ex.ToString());
+                    System.Threading.Thread.Sleep(2000);
 					break;
 				}
             }
