@@ -75,9 +75,9 @@ namespace VPNHelper.Controllers
 				{
                     string REFRESHTIME = System.Configuration.ConfigurationManager.AppSettings["REFRESHTIME"];
                     int reFreshTime = int.Parse(REFRESHTIME);
-                    if (DateTime.Now.Hour >= 1 && DateTime.Now.Hour <= 6) 
+                    if (DateTime.Now.Hour >= 1 && DateTime.Now.Hour < 6) 
                     {
-                        reFreshTime = reFreshTime * 2;
+                        reFreshTime = reFreshTime * 3;
                     }
                     string GETIPURL = System.Configuration.ConfigurationManager.AppSettings["GETIPURL"];
 					string strResult = HttpHelper.Get(GETIPURL, "");
